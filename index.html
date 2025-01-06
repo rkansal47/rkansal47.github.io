@@ -2,11 +2,33 @@
 layout: default
 ---
 
+<p>
+Welcome to my blog! I am a postdoctoral fellow at Caltech, working on advancing our understanding of the early universe with artificial intelligence (AI) and the CMS experiment at the CERN Large Hadron Collider.
+More information about my research is available at <a href="https://raghavkansal.com">raghavkansal.com</a>.
+</p>
+<p>
+In my spare time, I sometimes prepare <a href="#notes">notes and tutorials</a> on various topics in particle physics and AI / machine learning (ML).
+I figured this blog might be a good place to share them, along with some miscellaneous thoughts and my experiences in the field.
+Hopefully, you find something useful here, and feel free to reach out with any questions or suggestions!
+</p>
+
+<h1 style="border-top: solid 1px #e9ecef; padding-top: 10px" id="notes">Notes and Tutorials</h1>
+
+<ul>
+<li>Notes on <a href="https://rkansal47.github.io/standard-model">symmetries, quantum field theory, and the standard model</a></li>
+<li>Interactive Python tutorials for <a href="https://rkansal47.github.io/stats-for-hep">statistics in high energy physics (HEP)</a></li>
+<li>Hands-on tutorials on <a href="https://fnallpc.github.io/machine-learning-hats/">ML for HEP</a>, which I maintain on behalf of the Fermilab LHC Physics Center</li>
+<li>Notes on <a href="https://rkansal47.github.io/dissertation/ExperimentalBackground.html">the LHC and CMS experiments</a> (Part II of my dissertation)</li>
+</ul>  
+
+
+<h1 style="border-top: solid 1px #e9ecef; padding-top: 10px" id="featured">Featured Posts</h1>
+
 <div class="posts">
-  {% for post in paginator.posts %}
+  {% for post in site.categories.Featured %}
     <article class="post">
       <a href="{{ site.baseurl }}{{ post.url }}">
-        <h1>{{ post.title }}</h1>
+        <h2>{{ post.title }}</h2>
 
         <div>
           <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>

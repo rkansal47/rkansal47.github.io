@@ -21,9 +21,9 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #000000;
   font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #404040;
+  color: #fff;
   line-height: 1.7;
   font-weight: 400;
   font-size: 18px;
@@ -39,7 +39,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: $darkerGray;
+  color: #e4e4e4;
   font-weight: bold;
 
   line-height: 1.7;
@@ -177,12 +177,11 @@ span[data-pullquote]:before {
 }
 
 a {
-  color: #e6691b;
+  color: $blue;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: #904212;
-    transition: 0.2s;
+    color: $blue;
   }
 }
 
@@ -310,7 +309,7 @@ p > img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: #fff;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -325,7 +324,7 @@ p > img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: #c3c3c3;
   font-size: 16px;
 
   @include mobile {
@@ -348,14 +347,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: #fff;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: #e76f51;
     }
   }
 }
@@ -382,7 +381,7 @@ nav {
     color: $gray;
     font-size: 22px;
     font-style: italic;
-    background-color: #ede1ff;
+    background-color: #2d2932;
   }
 
   .you-may-like{
@@ -392,7 +391,7 @@ nav {
     color: $gray;
     font-size: 22px;
     font-style: italic;
-    background-color: #ddffb5;;
+    background-color: #333a2a;;
   }
 
   .comments {
@@ -704,7 +703,7 @@ Modules - reusable parts of our design
   font-size: 14.5px;
   padding: 2px 13px;
   border: none;
-  background-color: #4CAF50;
+  background-color: #e76f51;
   border-radius: 50px;
   color: #fff;
 }
@@ -776,7 +775,7 @@ Modules - reusable parts of our design
 
 .subscribeBtn {
   width: 30%;
-  background-color: #4CAF50;
+  background-color: #e76f51;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -807,11 +806,11 @@ Modules - reusable parts of our design
   position: relative;
   top: -1px;
   margin-left: 5px;
-  color: black;
+  color: white;
 }
 
 .btn-subscribe:hover {
-  color: black;
+  color: white;
 }
 
 .btn-subscribe > svg {
@@ -1140,43 +1139,9 @@ Modules - reusable parts of our design
   }
 }
 
-/* ***************** */
-/* *** Dark mode *** */
-/* ***************** */
-
-/* Code from https://ar.al/2021/08/24/implementing-dark-mode-in-a-handful-of-lines-of-css-with-css-filters/ */
-
-@media (prefers-color-scheme: dark) {
-  /* Invert all elements on the body while attempting to not alter the hue substantially. */
-  body {
-    filter: invert(100%) hue-rotate(180deg);
-  }
-
-  /* Workarounds and optical adjustments. */
-
-  /* Firefox workaround: Set the background colour for the html
-     element separately because, unlike other browsers, Firefox
-     doesn’t apply the filter to the root element’s background. */
-  html {
-    background-color: #111;
-  }
-
-  /* Do not invert media (revert the invert). */
-  img:not(.site-avatar-img), video, iframe {
-    filter: invert(100%) hue-rotate(180deg);
-  }
-
-  /* Improve contrast on list item markers. */
-  li::marker {
-    color: #666;
-  }
-}
-
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 //@import "highlights";
 @import "darcula";
 @import "svg-icons";
-
-
