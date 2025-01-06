@@ -235,16 +235,6 @@ p > img {
   color: $gray;
 }
 
-// Specify the color of the selection
-::-moz-selection {
-  color: $black;
-  background: $lightGray;
-}
-::selection {
-  color: $black;
-  background: $lightGray;
-}
-
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
@@ -491,6 +481,14 @@ body:after {
 .cd-container h1, .cd-container h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
+}
+
+.category-head {
+  padding: 2px 13px;
+  border: none;
+  background-color: #4CAF50;
+  border-radius: 50px;
+  color: #fff;
 }
 
 /* --------------------------------

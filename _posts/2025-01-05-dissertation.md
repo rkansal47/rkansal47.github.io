@@ -4,7 +4,7 @@ title: Dissertation Done!
 categories: [Featured, Particle Physics, Machine Learning]
 ---
 
-What better first post for my blog than to share that the final draft of my doctoral dissertation, *Understanding the High Energy Higgs Sector with the CMS Experiment and Artificial Intelligence*, was approved last month!
+What better first post for my blog than to share that my doctoral dissertation, *Understanding the High Energy Higgs Sector with the CMS Experiment and Artificial Intelligence*, was approved last month!
 In it, I write about my PhD work on searches for pairs of Higgs bosons produced at the CERN [Large Hadron Collider](https://rkansal47.github.io/dissertation/TheCERNLargeHadronCollider.html) (LHC) with the [CMS experiment](https://rkansal47.github.io/dissertation/Overview.html), and several new [machine learning](https://rkansal47.github.io/dissertation/Introduction1.html) (ML), [generative AI](https://rkansal47.github.io/dissertation/Autoencodersandgenerativemodels.html), and [equivariant](https://rkansal47.github.io/dissertation/Equivariantneuralnetworks.html) / geometric deep learning techniques for enabling such searches with [fast simulation]((https://rkansal47.github.io/dissertation/AcceleratingSimulationswithAI.html)), [improved classification](https://rkansal47.github.io/dissertation/BoostedHiggsidentification.html), and [anomaly detection](https://rkansal47.github.io/dissertation/Introduction3.html) algorithms.
 
 Amazingly, by searching for Higgs boson pairs *now*, we are able to [catch a glimpse of what the universe was like *14 billion years ago*]((https://rkansal47.github.io/dissertation/TheHiggssector.html#higgs-pair-production-in-the-sm)), just 1 trillionth of a second after the Big Bang!
